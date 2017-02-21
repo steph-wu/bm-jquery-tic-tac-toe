@@ -39,12 +39,11 @@ $(document).ready(function() {
       if (isEven(count)) {
         $(this).addClass('has-o');
         $(this).append("<div class=marker>o</div>");
-        checkWin();
       } else {
         $(this).addClass('has-x');
         $(this).append("<div class=marker>x</div>");
-        checkWin();
       };
     };
+    checkWin();
   });
 });
